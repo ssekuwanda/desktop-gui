@@ -1,4 +1,4 @@
-# desktop-gui
+# Desktop-gui using eel
 Using python eel to create desktop applications
 
 # Arrangement
