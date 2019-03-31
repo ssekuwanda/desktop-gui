@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>pinnie</title>
+    <link rel="stylesheet" href="bootstrap.min.css"> 
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="/eel.js"></script>
+    <script type="text/javascript">
+    $(function(){
+        $("#btn").click(function(){
+                eel.download_video($("#inp").val())(n => alert("Download complete"));
+                $('#inp').val('');
+            });
+        $("#audio_btn").click(function(){
+            eel.download_audio($("#audio_inp").val())(n => alert("Audio Download complete"));
+            $('#audio_inp').val('');
+            });
+    });
+
+    </script>
+</head>
+<body>
+    <div class="row ml-3">
+            <img src="img/7aacecc0e6ec6b6c691cad3a2b849a4d.png" alt="">
+            <h4 class="brand mt-3">PINNIE</h4>
+    </div>
+
+    <div class="container">
+        <h4>Video</h4>
+        <form class="form-inline">
+                <div class="form-group mx-sm-3">
+                <input type='text' id='inp' class="form-control" placeholder='youtube url'>
+                <input type='button' id='btn' class='btn btn-primary m-1' value='Download'>
+            </div>
+        </form>
+        <h4 class="mt-4">Audio</h4>
+        <form class="form-inline">
+                <div class="form-group mx-sm-3">
+                <input type='text' id='audio_inp' class="form-control" placeholder='youtube url'>
+                <input type='button' id='audio_btn' class='btn btn-primary m-1' value='Download'>
+            </div>
+        </form>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+@font-face{
+    font-family: "sunshine";
+    src: url('img/ShadedLarch_PERSONAL_USE.ttf');
+}
+body {
+    background: url('img/backimage.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+}
+
+.brand {
+    font-family: "sunshine";
+    margin: 10px;
+    font-size: 50px;
+    color: red;
+    padding-top: 80px;
+    font-weight: bold;
+}
+
+input[type="file"]{
+    display:none;
+}
+.file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+img {
+    width: 180px;
+    height: 180px;
+}
